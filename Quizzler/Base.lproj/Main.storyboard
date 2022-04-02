@@ -23,39 +23,43 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CLd-sh-jg2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qestion text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjd-Mc-TK0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qestion text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjd-Mc-TK0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="618"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRi-5i-gBL">
-                                        <rect key="frame" x="0.0" y="628" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="628" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="qaW-mI-I61"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="True">
-                                            <backgroundConfiguration key="background" image="Rectangle"/>
-                                            <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="True" backgroundImage="Rectangle">
+                                            <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N33-ff-nFX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-Ma-dDn">
-                                        <rect key="frame" x="0.0" y="718" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="718" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="yac-2I-dV5"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="False">
-                                            <backgroundConfiguration key="background" image="Rectangle"/>
-                                            <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="False" backgroundImage="Rectangle">
+                                            <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkb-sW-ETZ"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="icH-XP-peq">
-                                        <rect key="frame" x="0.0" y="808" width="414" height="10"/>
-                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <rect key="frame" x="0.0" y="808" width="374" height="10"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="AEt-cq-eLM"/>
                                         </constraints>
@@ -67,14 +71,20 @@
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Dsu-Ze-U5z" secondAttribute="bottom" id="288-ns-gxh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CLd-sh-jg2" secondAttribute="trailing" id="Fze-xd-2yd"/>
-                            <constraint firstItem="CLd-sh-jg2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dlP-Oq-e91"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CLd-sh-jg2" secondAttribute="trailing" constant="20" id="Fze-xd-2yd"/>
+                            <constraint firstItem="CLd-sh-jg2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dlP-Oq-e91"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CLd-sh-jg2" secondAttribute="bottom" id="du5-Lo-Sz2"/>
                             <constraint firstItem="Dsu-Ze-U5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o7W-1P-LbH"/>
                             <constraint firstItem="Dsu-Ze-U5z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pMu-ed-LL6"/>
                             <constraint firstItem="CLd-sh-jg2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qc8-NE-uun"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="RV6-Ma-dDn" id="9DP-JQ-ph3"/>
+                        <outlet property="progressBar" destination="icH-XP-peq" id="geP-om-7A9"/>
+                        <outlet property="questionLabel" destination="rjd-Mc-TK0" id="373-kr-wfc"/>
+                        <outlet property="trueButton" destination="bRi-5i-gBL" id="1Da-s3-g2D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,11 +97,8 @@
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
